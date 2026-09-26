@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import MovieList from './Components/MovieList/MovieList.jsx'
 import Home from './pages/Home/home'
 import Movies from './pages/Movies/Movies'
 import MovieDetails from './pages/MovieDetails/MovieDetails'
 import Layout from './Components/Layout/Layout'
+
+
 
 function App() {
 
