@@ -1,32 +1,21 @@
-
-import { getTrendingMovies } from "../../Api"
+import { getTrendingMovies } from "../../api"
 import { useEffect, useState } from "react"
+import MovieList from "../../Components/MovieList/MovieList"
 
-function Home () {
+function Home() {
     const [movie, setMovie] = useState([])
     useEffect(() => {
         async function fetchMovies() {
             const movies = await getTrendingMovies()
-            console.log(getTrendingMovies());
             setMovie(movies);
-            
-            
         }
-         fetchMovies()
+        fetchMovies()
     }, [])
     // console.log(movie);
-    
-   
     return (
         <>
-        <h1>Trending Today</h1>
-        <ul>
-            {movie.map((movie) => {
-                return (
-                    <li key={movie.id}>{movie.title}</li>
-                )
-            })}
-        </ul>
+            <h1>Trending today</h1>
+            <MovieList movies={movie} />
         </>
     )
 }
