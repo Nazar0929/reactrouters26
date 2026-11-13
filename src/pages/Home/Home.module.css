@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+
+
+.title {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: #e9ebf2;
+}

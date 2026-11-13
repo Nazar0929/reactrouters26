@@ -1,0 +1,36 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    background: rgba(14, 16, 22, 0.72);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.link,
+.active {
+    padding: 8px 20px;
+    border-radius: 999px;
+    color: #9ba2b5;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+    background-color: #232938;
+    color: #e9ebf2;
+}
+
+.active,
+.active:hover {
+    background-color: rgba(124, 131, 255, 0.14);
+    color: #a0a6ff;
+    box-shadow: inset 0 0 0 1px rgba(124, 131, 255, 0.35);
+}
